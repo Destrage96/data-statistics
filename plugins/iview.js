@@ -1,10 +1,6 @@
 import Vue from 'vue';
-import viewUI from 'view-design';
-import locale from 'view-design/dist/locale/ru-RU';
+import iView from 'iview';
 
-Vue.use(viewUI, {
-    transfer: true,
-    size: 'large',
-    locale: locale
-});
+Vue.use(iView);
+import 'iview/dist/styles/iview.css';
 
