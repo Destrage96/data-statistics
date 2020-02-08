@@ -1,0 +1,191 @@
+@import './helpers';
+@import './colors';
+@import '~view-design/src/styles/index';
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('~assets/fonts/Gilroy-Regular.eot');
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+  url('~assets/fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+  url('~assets/fonts/Gilroy-Regular.woff') format('woff'),
+  url('~assets/fonts/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('~assets/fonts/Gilroy-ExtraBold.eot');
+  src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
+  url('~assets/fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('~assets/fonts/Gilroy-ExtraBold.woff') format('woff'),
+  url('~assets/fonts/Gilroy-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('~assets/fonts/Gilroy-Light.eot');
+  src: local('Gilroy Light'), local('Gilroy-Light'),
+  url('~assets/fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+  url('~assets/fonts/Gilroy-Light.woff') format('woff'),
+  url('~assets/fonts/Gilroy-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('~assets/fonts/Gilroy-Bold.eot');
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+  url('~assets/fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+  url('~assets/fonts/Gilroy-Bold.woff') format('woff'),
+  url('~assets/fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-family: Gilroy, "Helvetica Neue", Helvetica, "Microsoft YaHei", Arial, sans-serif;
+
+@font-size-base: 14px;
+@font-size-small: 12px;
+@font-size-large: 14px;
+
+body, html {
+  height: 100%;
+  padding: 0;
+}
+
+body {
+  font-family: @font-family !important;
+}
+
+h1, h2, h3, h4 {
+  color: @title-color;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+h2, h3, h4 {
+  margin-bottom: 10px;
+}
+
+input {
+  filter: none;
+}
+
+div#__nuxt, div#__layout {
+  height: 100%;
+}
+
+.ivu-select-not-found {
+  li {
+    list-style: none;
+  }
+}
+
+.ivu-spin-dot {
+  background-color: @color-green;
+}
+
+.ivu-form-item-error-tip {
+  font-size: 11px;
+}
+
+.ivu-btn-primary {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ivu-input-number {
+  width: 100%;
+}
+
+.ivu-divider-inner-text {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.ivu-btn {
+  font-size: 13px;
+}
+
+.ivu-notice {
+  &-desc {
+    text-align: left !important;
+  }
+
+  &-title {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+}
+
+.ivu-modal-header-inner {
+  font-weight: 700;
+}
+
+.ivu-checkbox-wrapper + span, .ivu-checkbox + span {
+  margin-left: 8px !important;
+
+  &:last-child {
+    margin-left: 0;
+  }
+}
+
+.ivu-tabs {
+  overflow: visible;
+}
+
+.ivu-alert {
+  &-desc {
+    text-align: left;
+  }
+
+  &-with-desc&-with-icon {
+    padding: 10px 10px 10px 55px;
+  }
+}
+
+.ivu-page {
+  &-options {
+    &-sizer {
+      margin-right: 0;
+    }
+  }
+}
+
+.ivu-table .deleted-row td{
+  background-color: fade(@color-red,10%);
+}
+.ivu-table .new-row td{
+  font-weight: bold;
+}
+
+@media @tablet {
+  h3 {
+    font-size: 1.0rem;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media @desktop {
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+}

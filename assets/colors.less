@@ -1,0 +1,84 @@
+@color-black: #27292B;
+@color-green: #43AC39;
+@color-red: #AA4949;
+@color-blue: #4554D4;
+@color-violet: #8E38A8;
+@color-purple: #B754C8;
+@color-gray: rgba(85, 96, 116, 0.78);
+@color-yellow: #F9A604;
+@color-cyan: #3385CC;
+@color-fade-cyan: rgba(51, 133, 204, 0.75);
+
+@black: @color-black;
+@primary-color: @color-green;
+@error-color: @color-red;
+@warning-color: @color-yellow;
+@info-color: @color-cyan;
+@success-color: @color-green;
+
+//@link-color: #2A6A2A;
+@link-color: @color-green;
+@title-color: @color-black;
+@text-color: @color-black;
+@text-color-secondary: fade(@color-black, 70%);
+@heading-color: @color-black;
+
+// Input
+@input-placeholder-color: fade(@color-gray, 40%);
+@input-color: @text-color;
+
+// Layout
+@layout-sider-background: @color-black;
+@layout-header-background: #FFFFFF;
+@layout-footer-padding: 15px 20px;
+@layout-footer-background: clear;
+
+@menu-dark-active-bg: @color-green;
+@menu-dark-title: @color-black;
+@menu-dark-group-title-color: #FFFFFF;
+
+@table-td-stripe-bg: rgba(38, 91, 38, 0.02);
+@table-td-hover-bg: rgba(37, 74, 37, 0.1);
+@table-thead-bg: @table-td-stripe-bg;
+
+// Color palettes
+@blue-6: @color-blue;
+@purple-6: @color-violet;
+@cyan-6: @color-cyan;
+@green-6: @color-green;
+@red-6: @color-red;
+@orange-6: @color-yellow;
+@magenta-6: @color-purple;
+
+// Rate
+@rate-star-color: @color-yellow;
+@rate-star-low-color: @color-red;
+@rate-star-high-color: @color-green;
+
+// Генерация стилей bg-xxxx и text-xxx, где xxx название из @base-colors
+@base-colors: black, green, red, blue, violet, purple, gray, yellow, cyan;
+
+.generateColors(@list, @i: 1) when (@i <= length(@list)) {
+  @name: extract(@list, @i);
+  @color: "color-@{name}";
+
+  .bg-@{name} {
+    background-color: @@color !important;
+  }
+
+  .tx-@{name} {
+    color: @@color !important;
+  }
+  .generateColors(@list, @i + 1);
+}
+
+.generateColors(@base-colors);
+
+.tx-main {
+  color: @text-color;
+}
+
+.tx-secondary {
+  color: fade(@color-black, 85%);
+}
+
