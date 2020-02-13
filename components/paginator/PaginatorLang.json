@@ -1,0 +1,12 @@
+{
+  "en": {
+    "paginator": {
+      "total": "Total"
+    }
+  },
+  "ru": {
+    "paginator": {
+      "total": "Всего"
+    }
+  }
+}
