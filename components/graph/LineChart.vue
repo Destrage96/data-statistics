@@ -7,9 +7,15 @@
     mixins: [reactiveProp],
     props: ['options'],
     mounted () {
-      // this.chartData создаётся внутри миксина.
-      // Если вы хотите передать опции, создайте локальный объект options
       this.renderChart(this.chartData, this.options)
     }
   }
 </script>
+
+<style lang="less">
+  canvas {
+    min-width: 50vw !important;
+    max-width: 70vw !important;
+    height: 450px !important;
+  }
+</style>

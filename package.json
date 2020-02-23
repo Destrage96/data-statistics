@@ -24,7 +24,9 @@
     "nuxt": "^2.0.0",
     "nuxt-polyfill": "^1.0.3",
     "view-design": "^4.1.2",
-    "vue-chartjs": "^3.5.0"
+    "vue-chartjs": "^3.5.0",
+    "vue-router": "^3.1.5",
+    "vuex": "^3.1.2"
   },
   "devDependencies": {
     "eslint": "^6.6.0",

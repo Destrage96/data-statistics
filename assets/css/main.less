@@ -92,21 +92,22 @@ div#__nuxt, div#__layout {
   }
 }
 
-.ivu-tabs-nav .ivu-tabs-tab-active {
-  color: @color-yellow;
-}
-
-.ivu-tabs-ink-bar {
-  background-color: @color-yellow;
-  height: 4px;
-}
-
-.ivu-tabs-nav-container:focus .ivu-tabs-tab-focused {
-
+.ivu-menu-dark.ivu-menu-horizontal {
+  padding-top: 10px;
+  line-height: 35px;
+  .ivu-menu-item, .ivu-menu-dark.ivu-menu-horizontal .ivu-menu-submenu {
+    font-weight: 600;
+  }
+  .ivu-menu-item-active,
+  .ivu-menu-item:hover,
+  .ivu-menu-submenu-active,
+  .ivu-menu-submenu:hover {
+    border-bottom: 3px solid #FFFFFF;
+  }
 }
 
 .ivu-spin-dot {
-  background-color: @color-green;
+  background-color: @color-blue;
 }
 
 .ivu-form-item-error-tip {
@@ -120,11 +121,6 @@ div#__nuxt, div#__layout {
 
 .ivu-input-number {
   width: 100%;
-}
-
-.ivu-divider-inner-text {
-  font-size: 13px;
-  font-weight: bold;
 }
 
 .ivu-btn {
@@ -154,10 +150,6 @@ div#__nuxt, div#__layout {
   }
 }
 
-.ivu-tabs {
-  overflow: visible;
-}
-
 .ivu-alert {
   &-desc {
     text-align: left;
@@ -179,8 +171,17 @@ div#__nuxt, div#__layout {
 .ivu-table .deleted-row td{
   background-color: fade(@color-red,10%);
 }
+
 .ivu-table .new-row td{
   font-weight: bold;
+}
+
+.ivu-btn-primary {
+  background-color: @color-blue !important;
+}
+
+.ivu-checkbox-checked .ivu-checkbox-inner {
+  background-color: @color-blue !important;
 }
 
 @media @tablet {

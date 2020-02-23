@@ -1,6 +1,6 @@
 <template>
   <div class="status-list--container" style="height: auto">
-    <h2>Статус</h2>
+    <h2 class="mb30  mt30">Статус</h2>
     <Table :columns="statusListTitle" :data="dataJson">
       <template slot-scope="{ row }" slot="CounterID">
         <span>{{ row.CounterID }}</span>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-  import expandRow from '~/components/statusList/tableExpand.vue';
+  import expandRow from '~/components/statusList/tableExpand';
   import Paginator from '~/components/paginator/Paginator';
 
   export default {
@@ -56,6 +56,7 @@
             minWidth: 200
           },
         ],
+        //dataJson-тестовые данные, в дальнейшем передача иными путями (api или prorps...)
         dataJson: [
           {
             CounterID: 9,
@@ -162,3 +163,9 @@
     }
   }
 </script>
+
+<style lang="less">
+  .ivu-table-overflowX {
+    overflow-x: hidden;
+  }
+</style>

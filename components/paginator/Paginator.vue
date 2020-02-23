@@ -1,3 +1,4 @@
+//компонент пагинации таблиц
 <template>
     <div class="paginator--container" style="height: auto">
         <Row class="mb10 mt10 d-flex justify-end">
