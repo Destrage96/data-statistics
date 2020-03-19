@@ -2,6 +2,8 @@
 
 > Nuxt.js project
 
+Для входа введите логин: Test  пароль: Test
+
 ## Build Setup
 
 ``` bash
