@@ -18,7 +18,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/vue-fontawesome": "^0.1.9",
     "babel-eslint": "^10.0.3",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "intersection-observer": "^0.7.0",
     "iview": "^3.0.0",
     "nuxt": "^2.0.0",
